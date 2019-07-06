@@ -4,6 +4,7 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { FetchData } from './components/FetchDataComponents';
 import { Counter } from './components/Counter';
+import { BookReview } from './components/BookReview';
 
 export default class App extends Component {
   displayName = App.name
@@ -14,6 +15,7 @@ export default class App extends Component {
         <Route exact path='/' component={Home} />
         <Route path='/counter' component={Counter} />
         <Route path='/fetchdata' component={FetchData} />
+        <Route path='/bookreview' component={BookReview} />
       </Layout>
     );
   }
