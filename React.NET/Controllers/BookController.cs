@@ -8,20 +8,15 @@ using React.NET.Models;
 
 namespace React.NET.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class BookController : ControllerBase
     {
         BooksDataAccessLayer _dataLayer;
-        public BookController(BooksDataAccessLayer booksDataAccessLayer)
-        {
-            _dataLayer = booksDataAccessLayer;
-        }
 
         [HttpGet]
         [Route("api/Book/Index")]
         public IEnumerable<Book> Index()
         {
+            _dataLayer = new BooksDataAccessLayer();
             return _dataLayer.GetAllBooks();
         }
 
