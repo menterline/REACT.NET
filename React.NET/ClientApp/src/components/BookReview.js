@@ -1,5 +1,5 @@
 ﻿import React, { Component } from 'react';
-
+import '../css/BookReview.css'
 
 export class BookReview extends Component {
     displayName = BookReview.name
@@ -31,7 +31,7 @@ export class BookReview extends Component {
         return (
             <table className='bookTable' >
                 <thead>
-                    <tr>
+                    <tr className='bookTableHeading'>
                         <th></th>
                         <th>BookId</th>
                         <th>Book Name</th>
