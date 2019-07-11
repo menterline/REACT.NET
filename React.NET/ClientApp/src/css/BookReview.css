@@ -1,4 +1,7 @@
-﻿.bookTable {
+﻿html, body {
+    height: 100%;
+}
+.bookTable {
     width: 100%;
 }
 
@@ -11,6 +14,18 @@
     border-radius:5px;
 }
 
+.reviewTextBox {
+    height:100px;
+    width:400px;
+}
 .AddBookReviewForm div {
-    height: 8vh
+    margin-bottom: 15px;
+    min-height: 5px;
+}
+
+.submitBtn {
+    background-color: limegreen;
+}
+.btn {
+    margin-right: 5px;
 }

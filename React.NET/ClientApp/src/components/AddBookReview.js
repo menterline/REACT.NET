@@ -24,23 +24,27 @@ export class AddBookReview extends Component {
                 </div>
                 <div>
                     <label>Review:</label><br />
-                    <input type="text" className="AddBookInput" />
+                    <textarea  maxlength="255" placeholder="enter review text here"className="AddBookInput reviewTextBox" />
                     <br/>
                 </div>
                 <div>
                     <label>Rating:</label><br />
-                    <input type="text" className="AddBookInput" />
+                    <input type="number" step="0.5" min="0" max="5" className="AddBookInput ratingPicker" />
                     <br/>
                 </div>
                 <div>
                     <label>Start Date:</label><br />
-                    <input type="text" className="AddBookInput" />
+                    <input type="date" className="AddBookInput datePicker" />
                     <br/>
                 </div>
                 <div>
                     <label>End Date:</label><br />
-                    <input type="text" className="AddBookInput" />
+                    <input type="date" className="AddBookInput datePicker" />
                     <br/>
+                </div>
+                <div>
+                    <button type="submit" className="submitBtn btn">Save</button>
+                    <button className="btn">Cancel</button>
                 </div>
             </form>
         );
