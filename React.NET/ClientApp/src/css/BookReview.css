@@ -5,3 +5,12 @@
 .bookTableHeading {
     border-bottom: solid black 1px;
 }
+
+.AddBookInput {
+    border: 1px solid gray;
+    border-radius:5px;
+}
+
+.AddBookReviewForm div {
+    height: 8vh
+}

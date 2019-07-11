@@ -1,4 +1,5 @@
 ﻿import React, { Component } from 'react';
+import '../css/BookReview.css'
 
 export class AddBookReview extends Component {
     displayName = AddBookReview.name
@@ -10,31 +11,37 @@ export class AddBookReview extends Component {
     render() {
         return (
             <form className="AddBookReviewForm">
+                <h1>Add New Book Review</h1>
                 <div>
                     <label>Book Name:</label><br/>
-                    <input type="text" name="bookName" />
+                    <input type="text" className="AddBookInput" />
+                    <br/>
                 </div>
                 <div>
                     <label>Author Name:</label><br/>
-                    <input type="text" name="authorName" />
+                    <input type="text" className="AddBookInput" />
+                    <br/>
                 </div>
                 <div>
                     <label>Review:</label><br />
-                    <input type="text" name="reviewText" />
+                    <input type="text" className="AddBookInput" />
+                    <br/>
                 </div>
                 <div>
-                    <label>Rating</label><br />
-                    <input type="text" name="rating" />
+                    <label>Rating:</label><br />
+                    <input type="text" className="AddBookInput" />
+                    <br/>
                 </div>
                 <div>
                     <label>Start Date:</label><br />
-                    <input type="text" name="startDate" />
+                    <input type="text" className="AddBookInput" />
+                    <br/>
                 </div>
                 <div>
                     <label>End Date:</label><br />
-                    <input type="text" name="endDate" />
+                    <input type="text" className="AddBookInput" />
+                    <br/>
                 </div>
-
             </form>
         );
     }
