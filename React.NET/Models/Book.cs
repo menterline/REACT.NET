@@ -11,6 +11,24 @@ namespace React.NET.Models
         public string ReviewText { get; set; }
         public decimal Rating { get; set; }
         public DateTime? StartDate { get; set; }
+        public string StartShortDate
+        {
+            get
+            {
+                if (StartDate.HasValue)
+                    return StartDate.Value.ToShortDateString();
+                return string.Empty;
+            }
+        }
         public DateTime? EndDate { get; set; }
+        public string EndShortDate
+        {
+            get
+            {
+                if (EndDate.HasValue)
+                    return EndDate.Value.ToShortDateString();
+                return string.Empty;
+            }
+        }
     }
 }

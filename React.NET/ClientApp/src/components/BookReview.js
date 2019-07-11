@@ -1,4 +1,5 @@
 ﻿import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/BookReview.css'
 
 export class BookReview extends Component {
@@ -22,6 +23,9 @@ export class BookReview extends Component {
         return (
             <div>
                 <h1> Book Reviews </h1>
+                <p>
+                    <Link to="/addbookreview">Add New </Link>
+                </p>
                 {contents}
             </div >
         );
@@ -51,8 +55,8 @@ export class BookReview extends Component {
                             <td>{book.authorName}</td>
                             <td>{book.reviewText}</td>
                             <td>{book.rating}</td>
-                            <td>{book.startDate}</td>
-                            <td>{book.endDate}</td>
+                            <td>{book.startShortDate}</td>
+                            <td>{book.endShortDate}</td>
                         </tr>
                     )}
                 </tbody>
