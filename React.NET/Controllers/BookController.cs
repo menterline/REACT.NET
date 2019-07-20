@@ -10,13 +10,12 @@ namespace React.NET.Controllers
 {
     public class BookController : ControllerBase
     {
-        BooksDataAccessLayer _dataLayer;
+        BooksDataAccessLayer _dataLayer = new BooksDataAccessLayer();
 
         [HttpGet]
         [Route("api/Book/Index")]
         public IEnumerable<Book> Index()
         {
-            _dataLayer = new BooksDataAccessLayer();
             return _dataLayer.GetAllBooks();
         }
 
