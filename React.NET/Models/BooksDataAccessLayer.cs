@@ -40,7 +40,7 @@ namespace React.NET.Models
                 dbContext.SaveChanges();
                 return true;
             }
-            catch
+            catch (Exception e)
             {
                 return false;
             }
